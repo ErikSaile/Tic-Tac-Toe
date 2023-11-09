@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tic-Tac-Toe</title>
+  <link href="style.css" rel="stylesheet">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div id="wrapper"> <!-- start wrapper -->
+  
+	<div id="counter">
+	  <div class="count-chld">
+		<p id="count-ttl1">X Wins</p>
+		<p id="x-win-count">0</p>
+	  </div>
+			
+	  <div class="count-chld">
+		<p id="count-ttl2">Ties</p>
+		<p id="ties">0</p>
+	  </div>
+			
+	  <div class="count-chld">
+		<p id="count-ttl3">O Wins</p>
+		<p id="o-win-count">0</p>
+	  </div>
+	</div> <!-- end counter -->
+	
+    <h2 id="toPlay">X to play</h2>
+	
+	<div id="container"> <!-- start container -->
+	
+	  <!-- start top row -->
+			
+			  <button type="button" id="AA" onclick="onClick_FUNC()" 
+						class="box" onmouseover="btnID='AA'"></button>
+			
+			  <button type="button" id="AB" onclick="onClick_FUNC()" 
+						class="box" onmouseover="btnID='AB'"></button>
+			
+			  <button type="button" id="AC" onclick="onClick_FUNC()" 
+						class="box" onmouseover="btnID='AC'"></button>
+			
+	  <!-- end top row -->
+	  
+	  <!-- start middle row -->
+			
+			  <button type="button" id="BA" onclick="onClick_FUNC()" 
+						class="box" onmouseover="btnID='BA'"></button>
+			
+			  <button type="button" id="BB" onclick="onClick_FUNC()" 
+						class="box" onmouseover="btnID='BB'"></button>
+			
+			  <button type="button" id="BC" onclick="onClick_FUNC()" 
+						class="box" onmouseover="btnID='BC'"></button>
+			
+	  <!-- end middle row -->
+	  
+	  <!-- start bottom row -->
+			
+			  <button type="button" id="CA" onclick="onClick_FUNC()" 
+						class="box" onmouseover="btnID='CA'"></button>
+			
+			  <button type="button" id="CB" onclick="onClick_FUNC()" 
+						class="box" onmouseover="btnID='CB'"></button>
+			
+			  <button type="button" id="CC" onclick="onClick_FUNC()" 
+						class="box" onmouseover="btnID='CC'"></button>
+			
+	  <!-- end bottom row -->
+	  
+	</div> <!-- end container -->
+	
+	
+	
+	<button type="button" id="restartBTN" 
+			onclick="clear_FUNC()">clear</button>
+  </div> <!-- end wrapper -->
+</body>
+</html>
